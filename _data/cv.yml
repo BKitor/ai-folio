@@ -2,96 +2,74 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Benjamin Kitor
     - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: June 29, 1999
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+    - title: MASc - Computer Engineering
+      institution: Queen's University, Kingston ON, Canada
+      year: 2021-Present
+    - title: BASc - Computer Engineering
+      institution: Queen's University, Kingston ON, Canada
+      year: 2017-2021
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - title: High-Performance Cluster Computing
       items:
-        - Description 1.
-        - Description 2.
+        - Communication runtimes design, for example, MPI, UCX, and Libfabric
+        - Collective Communication methods and algorithms
+        - Software for accelerators like GPUs and DPUs
+    - title: Deep Learning
+      items:
+        - Communication modeling of distributed DL
+        - Accelerating Model Parallelism/Data Parallelism through efficient communication
 
-- title: Other Interests
-  type: list
+- title: Honors and Awards
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - year: 2020
+      items:
+        - NSERC Undergraduate Student Research Award
+    - year: 2021
+      items:
+        - Vector Scholarship in Artificial Intelligence
+
+- title: Projects/Resarch Exprience
+  type: nested_list
+  contents:
+    - title: Argonne Training Program on Extreme-Scale Computing (ATPESC) 
+      items:
+        - Was accepted to attend a workshop hosted by Argonne National Lab
+        - Gained experience running applications at scale on ALCF clusters Theta and Polaris
+    - title: Process Arrival Pattern Aware Collectives
+      items:
+        - Developed a novel method to disseminate process arrival pattern information in distributed memory systems
+        - Utilizes UCX RMA and atomic operations to minimize synchronization and maximize performance
+        - Accompanying PAP-Aware allreduce algorithm successfully increased throughput on synthetic Horovod benchmarks
+    - title: Topology Aware Collective Rank Reordering
+      items:
+        - Optimized OpenMPI's Allreduce and Broadcast algorithms through renumbering ranks based on hardware/network topology and collective algorithm
+        - Measured microbenchmark improvements on systems with up to 128 GPUs and 32'000 CPU core jobs 
+
+
+- title: Publications
+  type: time_table
+  contents:
+    - year: 2020
+      items:
+        - 'Y. H. Temuçin, A. H. Sojoodi, P. Alizadeh, B. Kitor and A. Afsahi, "Accelerating Deep Learning Using Interconnect-Aware UCX Communication for MPI Collectives," in IEEE Micro, vol. 42, no. 2, pp. 68-76, 1 March-April 2022, DOI: 10.1109/MM.2022.3148670.'
+
+- title: Teaching Experience
+  type: time_table
+  contents: 
+    - year: 2023
+      items:
+        - "Teaching Assistant - ELEC 470: Computer System Architecture"
+    - year: 2022
+      items:
+        - "Teaching Assistant - ELEC 374: Digital Systems Engineering"
