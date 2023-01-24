@@ -74,6 +74,23 @@ blockquote {
     color: var(--global-text-color);
   }
 
+  .card-gh-icon{
+    font-size: 2rem;
+    a {
+      i::before {
+        color: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+      &:hover {
+        i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+    
+  }
+  
+
   .card-item {
     width: auto;
     margin-bottom: 10px;
@@ -322,9 +339,9 @@ footer.sticky-bottom {
 // Repositories
 
 @media (min-width: 768px) {
-  .repo {
-    max-width: 50%;
-  }
+  // .repo {
+    // max-width: 50%;
+  // }
 }
 
 // Blog
@@ -673,6 +690,20 @@ html.transition *:after {
     .desc{
       font-style: italic;
       color: var(--global-text-color-light);
+    }
+    .ph-gh-icon{
+      font-size: 2rem;
+    a {
+      i::before {
+        color: var(--global-theme-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+      &:hover {
+        i::before {
+          color: var(--global-text-color);
+        }
+      }
+    }
     }
   }
 }

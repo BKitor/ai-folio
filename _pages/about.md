@@ -17,6 +17,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 Hi, I am Benjamin Kitor, a computer engineering student completing his MASc at Queen's University.
+I do stuff with HPC networking software, MPI, UCX and Libfabric.
 
 My research lies at the intersection of HPC and AI, focusing on accelerating collective communication to decrease DL training time.
 In terms of technology, I've spent the past few years pulling apart the internals of OpenMPI, debugging UCX atomics, and benchmarking Horovod. 
